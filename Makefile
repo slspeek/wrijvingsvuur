@@ -1,7 +1,7 @@
 export PATH:=/sbin:/usr/sbin:${PATH}
 
 view:
-	pdflatex spreekbeurt.tex; xpdf spreekbeurt.pdf
+	pdflatex spreekbeurt.tex; pdflatex aantekeningen.tex;xpdf spreekbeurt.pdf;xpdf aantekeningen.pdf
 
 prepare:
 	sudo apt-get install texlive texlive-pictures  xpdf 
